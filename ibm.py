@@ -15,7 +15,7 @@ client.connect(hostname=host, username=user, password=secret, port=port)
 stdin, stdout, stderr = client.exec_command('lsdrive')
 lsdrive = stdout.read()
 lsdrive = lsdrive.decode('UTF-8')
-file = '/etc/zabbix/scripts/ibm/result/10.0.0.180/lsdrive.txt'
+file = '/etc/zabbix/scripts/ibm/result/lsdrive.txt'
 with open(file, 'w') as file:
     file.write(lsdrive)
 
@@ -23,7 +23,7 @@ with open(file, 'w') as file:
 #stdin, stdout, stderr = client.exec_command('lssystemstats')
 #lssystemstats = stdout.read()
 #lssystemstats = lssystemstats.decode('UTF-8')
-#file = '/etc/zabbix/scripts/ibm/result/10.0.0.180/lssystemstats.txt'
+#file = '/etc/zabbix/scripts/ibm/result/lssystemstats.txt'
 #with open(file, 'w') as file:
 #    file.write(lssystemstats)
 
@@ -31,7 +31,7 @@ with open(file, 'w') as file:
 stdin, stdout, stderr = client.exec_command('lsarray')
 lsarray = stdout.read()
 lsarray = lsarray.decode('UTF-8')
-file = '/etc/zabbix/scripts/ibm/result/10.0.0.180/lsarray.txt'
+file = '/etc/zabbix/scripts/ibm/result/lsarray.txt'
 with open(file, 'w') as file:
     file.write(lsarray)
 
@@ -39,7 +39,7 @@ with open(file, 'w') as file:
 stdin, stdout, stderr = client.exec_command('lsenclosurebattery')
 lsenclosurebattery = stdout.read()
 lsenclosurebattery = lsenclosurebattery.decode('UTF-8')
-file = '/etc/zabbix/scripts/ibm/result/10.0.0.180/lsenclosurebattery.txt'
+file = '/etc/zabbix/scripts/ibm/result/lsenclosurebattery.txt'
 with open(file, 'w') as file:
     file.write(lsenclosurebattery)
 
@@ -47,7 +47,7 @@ with open(file, 'w') as file:
 stdin, stdout, stderr = client.exec_command('lshost')
 lshost = stdout.read()
 lshost = lshost.decode('UTF-8')
-file = '/etc/zabbix/scripts/ibm/result/10.0.0.180/lshost.txt'
+file = '/etc/zabbix/scripts/ibm/result/lshost.txt'
 with open(file, 'w') as file:
     file.write(lshost)
 
@@ -56,7 +56,7 @@ with open(file, 'w') as file:
 stdin, stdout, stderr = client.exec_command('lsnodecanisterstats')
 lsnodecanisterstats = stdout.read()
 lsnodecanisterstats = lsnodecanisterstats.decode('UTF-8')
-file = '/etc/zabbix/scripts/ibm/result/10.0.0.180/lsnodecanisterstats.txt'
+file = '/etc/zabbix/scripts/ibm/result/lsnodecanisterstats.txt'
 with open(file, 'w') as file:
     file.write(lsnodecanisterstats)
 
@@ -64,7 +64,7 @@ with open(file, 'w') as file:
 stdin, stdout, stderr = client.exec_command('lsmdiskgrp')
 lsmdiskgrp = stdout.read()
 lsmdiskgrp = lsmdiskgrp.decode('UTF-8')
-file = '/etc/zabbix/scripts/ibm/result/10.0.0.180/lsmdiskgrp.txt'
+file = '/etc/zabbix/scripts/ibm/result/lsmdiskgrp.txt'
 with open(file, 'w') as file:
     file.write(lsmdiskgrp)
 
@@ -73,7 +73,7 @@ with open(file, 'w') as file:
 stdin, stdout, stderr = client.exec_command('lsportip')
 lsportip = stdout.read()
 lsportip = lsportip.decode('UTF-8')
-file = '/etc/zabbix/scripts/ibm/result/10.0.0.180/lsportip.txt'
+file = '/etc/zabbix/scripts/ibm/result/lsportip.txt'
 with open(file, 'w') as file:
     file.write(lsportip)
 
@@ -81,7 +81,7 @@ with open(file, 'w') as file:
 stdin, stdout, stderr = client.exec_command('lssevdiskcopy')
 lssevdiskcopy = stdout.read()
 lssevdiskcopy = lssevdiskcopy.decode('UTF-8')
-file = '/etc/zabbix/scripts/ibm/result/10.0.0.180/lssevdiskcopy.txt'
+file = '/etc/zabbix/scripts/ibm/result/lssevdiskcopy.txt'
 with open(file, 'w') as file:
     file.write(lssevdiskcopy)
 
@@ -89,7 +89,7 @@ with open(file, 'w') as file:
 stdin, stdout, stderr = client.exec_command('lsvdisk')
 lsvdisk = stdout.read()
 lsvdisk = lsvdisk.decode('UTF-8')
-file = '/etc/zabbix/scripts/ibm/result/10.0.0.180/lsvdisk.txt'
+file = '/etc/zabbix/scripts/ibm/result/lsvdisk.txt'
 with open(file, 'w') as file:
     file.write(lsvdisk)
 
@@ -97,7 +97,7 @@ with open(file, 'w') as file:
 stdin, stdout, stderr = client.exec_command('lsvdiskanalysis')
 lsvdiskanalysis = stdout.read()
 lsvdiskanalysis = lsvdiskanalysis.decode('UTF-8')
-file = '/etc/zabbix/scripts/ibm/result/10.0.0.180/lsvdiskanalysis.txt'
+file = '/etc/zabbix/scripts/ibm/result/lsvdiskanalysis.txt'
 with open(file, 'w') as file:
     file.write(lsvdiskanalysis)
 client.close()
